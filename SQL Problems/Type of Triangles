@@ -1,0 +1,8 @@
+Select
+    Case 
+        when  A >= (B + C) OR B >= (A + C) OR C >= (A + B) THEN 'Not A Triangle'
+        when A = B and A = C then 'Equilateral'
+        when A = B or B = C or C = A then 'Isosceles'
+        else 'Scalene'
+    End
+from triangles
